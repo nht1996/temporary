@@ -1,6 +1,6 @@
-# This is an <h1> tag
-## This is an <h2> tag
-### This is an <h3> tag
-#### This is an <h4> tag
-##### This is an <h5> tag
-###### This is an <h6> tag
+# h1 tag
+## h2 tag
+### h3 tag
+#### h4 tag
+##### h5 tag
+###### h6 tag
