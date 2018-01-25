@@ -31,3 +31,11 @@ Cùng em xem thử google hangouts có ưu điểm gì nhé
 
 Với những ưu điểm trên và nhược điểm là trôi tin nhắn, em nhận thấy nhược điểm này trên phần mềm chát nào cũng bị nên em quyết định chọn dịch vụ này để xây dựng mô hình tự học
 
+Ví dụ về cách làm việc:
+khi em nhận bài tập nhóm hoặc kết thúc môn, em sẽ tao 1 nhóm về môn học đó và mời các bạn tham gia.
+Sau đó các bạn nói lên những thắc mắc của mình và em phân thích giải đáp các thắc mắc đó.
+đến khi các bạn hiểu và các bạn hình dung được mình cần gì và làm gì để giải quyết vấn đề đó thì các bạn bắt đầu vào nguyên cứu.
+Sau quá trình nghiên cứu xong em gọi video cho các bạn thảo luận và bạn nào nghiên cứu cái nào phải truyền đạt lại cho các ban khác cùng hiễu.
+Vô tình các bạn có kỹ năng truyền đạt kiến thức của mình cho người khác.
+Nếu ko hiễu thì các bạn có khi chia sẽ màn hình mình lên và làm trực tiếp trên máy cho các bạn khác xem.
+Khi làm việc chia từng module nhỏ, dùng github...
