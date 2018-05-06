@@ -1,0 +1,21 @@
+<html>
+
+<body>
+  <script>
+    var host = 'wss://socket.remitano.com/socket.io/?EIO=3&transport=websocket';
+    var socket = new WebSocket(host);
+    socket.onopen = function () {
+      // Web Socket is connected, send data using send()
+      socket.send("42[\"subscribe\",{\"room\":\"exchange_rates\",\"token\":null}]");
+      socket.send("42[\"subscribe\",{\"room\":\"vn_btc_rates\",\"token\":null}]");
+    };
+    socket.onmessage = function (e) {
+      var obj = JSON.parse(e.data.substring(e.data.indexOf("{"), e.data.lastIndexOf("}") + 1));
+      if (obj.vn) {
+        console.log(obj.vn.btc_ask)
+      }
+    };
+  </script>
+</body>
+
+</html>
