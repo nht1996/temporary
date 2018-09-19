@@ -6,7 +6,7 @@
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="media/jquery.textover.min.js"></script>
+  <script src="./media/jquery.textover.min.js"></script>
   <script type="text/javascript">
     jQuery(function ($) {
 
@@ -28,11 +28,17 @@
         context.fillStyle = "red";
 
         $.each(textover_api.getData(), function () {
-          context.fillText(this.text, this.left, this.left);
-          html += 'Text &raquo; ' + this.text + ' Left &raquo; ' + this.left + ' Top &raquo; ' + this.left + '<br />';
+          context.fillText(this.text, this.left, this.top);
+          html += 'Text &raquo; ' + this.text + ' Left &raquo; ' + this.left + ' Top &raquo; ' + this.top + '<br />';
         });
         imageObj.onload = function () {
-          console.log(canvas[0].toDataURL())
+          // html += '<a href="' + canvas[0].toDataURL() + '" target="_blank">view images</a>'
+          // console.log(canvas[0].toDataURL())
+          
+          let a = document.createElement('a');
+          a.href = canvas[0].toDataURL();
+          a.download = '';
+          a.click();
         }
         $('#data').html(html).show();
       });
@@ -40,25 +46,13 @@
     });
 
   </script>
-  <link rel="stylesheet" href="media/demos.css" type="text/css" />
+  <link rel="stylesheet" href="./media/demos.css" type="text/css" />
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="span11">
-        <div class="demo-box">
-          <div class="page-header">
-            <h1>jQuery Text Over Demo</h1>
-          </div>
-          <img src="media/vagamon.jpg" id="target" alt="[Text Over Example]" />
-          <div id="data" class="well"></div>
-          <button id="show">Show Data</button>
-          <div class="clearfix"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <img src="./media/vagamon.jpg" id="target" alt="[Text Over Example]" />
+  <div id="data" class="well"></div>
+  <button id="show">Show Data</button>
   <script type="text/javascript">
 
     var _gaq = _gaq || [];
