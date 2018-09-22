@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'SWEETYCHEESE';
+  src: url('SWEETYCHEESE.woff2') format('woff2'),
+      url('SWEETYCHEESE.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'SWEETYCHEESE';
+}
+
+textarea {
+  font-family: inherit;
+}
+
 .demo-box {
   text-align: left;
   margin: 2em auto;
